@@ -1,0 +1,21 @@
+# build output
+.next
+out
+intl/.messages
+
+# dependencies
+node_modules
+.fontello
+
+# logs
+*.log
+
+# system
+.DS_Store
+
+# vim
+*.swo
+*.swp
+
+# dev specific
+.nvmrc

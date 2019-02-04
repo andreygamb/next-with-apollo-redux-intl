@@ -1,0 +1,47 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./"]
+      }
+    ],
+    [
+      "react-intl-auto",
+      {
+        "filebase": true
+      }
+    ]
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "styled-components",
+          {
+            "displayName": true,
+            "ssr": true
+          }
+        ]
+      ]
+    },
+    "production": {
+      "plugins": [
+        [
+          "styled-components",
+          {
+            "displayName": false,
+            "ssr": true
+          }
+        ]
+      ]
+    }
+  }
+}
